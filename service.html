@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ali Raza - Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: white;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background: white;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .service-container {
+      margin-top: 120px;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+
+    .service-container h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .service-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .service-list li {
+      margin-bottom: 20px;
+      font-size: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .service-list li:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navigation -->
+  <nav>
+    <div class="logo">Ali Raza</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Service</a>
+      <a href="design.html">Design</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ✅ Service Section -->
+  <div class="service-container">
+    <h1>Our Services</h1>
+    <ul class="service-list">
+      <li>🌐 Web Design – Beautiful and responsive website design</li>
+      <li>💻 Web Development – Frontend & backend development</li>
+      <li>🎨 Graphic Design – Logos, banners, and brand visuals</li>
+      <li>📱 App UI Design – Mobile-friendly user interfaces</li>
+      <li>🔧 Website Maintenance – Bug fixes and content updates</li>
+    </ul>
+  </div>
+
+</body>
+</html>
